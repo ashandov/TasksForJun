@@ -10,9 +10,6 @@
 *.csproj
 *.suo
 *.config
-/packages*
-/Lab01.v12.suo
-/StackTests*
 
 # Build results
 [Dd]ebug/
