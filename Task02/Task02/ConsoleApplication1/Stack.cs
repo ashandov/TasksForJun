@@ -7,6 +7,61 @@ using System.Threading.Tasks;
 
 namespace Task01
 {
+	public class StackEnumertor<T> : IEnumerator<T>
+	{
+		int position = -1;
+		T[] enumerableStack;
+		public StackEnumertor(T[] initVal)
+		{
+			enumerableStack = initVal;
+		}
+
+		public T Current
+		{
+			get
+			{
+				if (position == -1 || position >= (enumerableStack.Length))
+				{
+					throw new InvalidOperationException();
+				}
+				return enumerableStack[position];
+			}
+		}
+
+		object IEnumerator.Current
+		{
+			get
+			{
+				if (position == -1 || position >= (enumerableStack.Length))
+				{
+					throw new InvalidOperationException();
+				}
+				return enumerableStack[position];
+			}
+		}
+
+		public void Dispose()
+		{
+
+		}
+
+		public bool MoveNext()
+		{
+			if (position < (enumerableStack.Length - 1))
+			{
+				position++;
+				return true;
+			}
+			else
+				return false;
+		}
+
+		public void Reset()
+		{
+			position = -1;
+		}
+
+	}
 	public class Stack<T>
 	{
 		int top;
@@ -49,6 +104,10 @@ namespace Task01
 			T c = stackArray[top - 1];
 			stackArray[--top] = default(T);
 			return c;
+		}
+		public IEnumerator<T> GetEnumerator()
+		{
+			return new StackEnumertor<T>(stackArray);
 		}
 
 	}

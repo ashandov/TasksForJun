@@ -1,26 +1,87 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Task01;
+﻿//using System;
+//using Task01;
+//using NUnit.Framework;
 
-namespace StackTests
-{
-    [TestClass]
-    public class StackTests
-    {
-            [TestMethod]
-            public void Push_3ToEmptyArray() 
-        {
-          //arrange
-            int x=3;
-          //act
-            var stack = new Stack();
-            stack.Push(x);
-          //  int? actual=stack.Peek(0);
-          ////assert
-          //  Assert.AreEqual(x,stack.Peek(0));
-        }
-            [TestMethod]
-            public void Push_4ToNotEmptyArray() { }
-        }
-    }
+
+//namespace Stack.Tests
+//{
+
+//	[TestFixture]
+//	public class StackTests
+//	{
+//		Task01.Stack <int?> stack;
+//		[SetUp]
+//		public void TestInitialize()
+//		{
+//			stack = new Task01.Stack <int?>();
+//		}
+//		[Test]
+//		public void Push_FirstElementToEmptyArray_Pushed()
+//		{
+//			//arrange
+//			int x = 3;
+//			//act
+			
+//			stack.Push(x);
+//			//  int? actual=stack.Peek(0);
+//			////assert
+//			Assert.AreEqual(x, stack.Peek());
+//		}
+//		[Test]
+//		public void Push_ElementToNotEmptyStack_Pushed() 
+//		{
+//			//arrange
+//			int x = 3;
+//			int y = 5;
+//			//act
+//			stack.Push(x);
+//			stack.Push(y);
+//			////assert
+//			Assert.AreEqual(y, stack.Peek());
+//		}
+//		[Test]
+//		public void Peek_ELementFromNotEmptyStack_Peeked()
+//		{
+//			//arrange
+//			int x = 3;
+//			int y = 5;
+//			//act
+//			stack.Push(x);
+//			stack.Push(y);
+//			////assert
+//			Assert.AreEqual(y, stack.Peek());
+//		}
+//		[Test]
+//		public void Peek_First_ELementFromEmptyStack_Exception()
+//		{
+//			//arrange
+//			//act
+//			stack.Peek();
+//			////assert
+		
+//		}
+//		[Test]
+//		public void Pop_ELementFromNotEmptyStack_Poped()
+//		{
+//			//arrange
+//			int x = 3;
+//			int y = 5;
+//			//act
+//			stack.Push(x);
+//			stack.Push(y);
+//			////assert
+//			Assert.AreEqual(y, stack.Pop());
+//		}
+//		[Test]
+//		public void Pop_First_ELementFromEmptyStack_Exception()
+//		{
+//			//arrange
+//			//d delegate = stack.Pop();
+//			//act
+//			stack.Pop();
+//			////assert
+//			//Assert.Throws<IndexOutOfRangeException>();
+//		}
+//	}
+//}
 

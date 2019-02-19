@@ -1,11 +1,10 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task01
+namespace ConsoleApplication1
 {
 	class Program
 	{
@@ -18,6 +17,10 @@ namespace Task01
 			st.Push(5);
 			st.Push(6);
 			st.Push(7);
+			foreach (var item in st)
+			{
+				Console.Write(item + " ");
+			}
 			Console.WriteLine(st.Pop());
 			Console.WriteLine(st.Peek());
 			st.Push(12);
@@ -29,6 +32,10 @@ namespace Task01
 			q.Enqueue(5);
 			q.Enqueue(6);
 			q.Enqueue(7);
+			foreach (var item in q)
+			{
+				Console.Write(item + " ");
+			}
 			Console.WriteLine(q.Dequeue());
 			q.Enqueue(14);
 			Console.WriteLine(q.Dequeue());
