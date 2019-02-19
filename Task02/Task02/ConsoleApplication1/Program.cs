@@ -47,7 +47,7 @@ namespace ConsoleApplication1
 			Console.WriteLine(q.Dequeue());
 			q.Enqueue(42);
 			Console.WriteLine(q.Dequeue());
-			Console.WriteLine(q.Peek());
+			//Console.WriteLine(q.Peek());
 			q.Enqueue(42);
 			q.Enqueue(31);
 			q.Enqueue(777);

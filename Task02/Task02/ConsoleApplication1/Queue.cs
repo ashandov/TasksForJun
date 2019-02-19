@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Task01
 {
-	public class QueueEnumertor<T> : IEnumerator<T>
+	public class QueueEnumertor<T>
 	{
 		int position = -1;
 		T[] enumerableQueue;
@@ -26,24 +26,6 @@ namespace Task01
 				return enumerableQueue[position];
 			}
 		}
-
-		object IEnumerator.Current
-		{
-			get
-			{
-				if (position == -1 || position >= (enumerableQueue.Length))
-				{
-					throw new InvalidOperationException();
-				}
-				return enumerableQueue[position];
-			}
-		}
-
-		public void Dispose()
-		{
-
-		}
-
 		public bool MoveNext()
 		{
 			if (position < (enumerableQueue.Length - 1))
@@ -126,7 +108,7 @@ namespace Task01
 			else return default(T);
 
 		}
-		public IEnumerator<T> GetEnumerator()
+		public QueueEnumertor<T> GetEnumerator()
 		{
 			return new QueueEnumertor<T>(queueArray);
 		}
