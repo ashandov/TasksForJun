@@ -2,7 +2,6 @@
   <MonoDevelop.Ide.ItemProperties.Task01 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Stack.cs">
     <Files>
-      <File FileName="../StackTests/StackTests.cs" Line="1" Column="1" />
       <File FileName="Queue.cs" Line="71" Column="13" />
       <File FileName="Program.cs" Line="30" Column="1" />
       <File FileName="Stack.cs" Line="8" Column="17" />
@@ -12,7 +11,7 @@
         <State name="__root__">
           <Node name="Task01" expanded="True">
             <Node name="Task01" expanded="True">
-              <Node name="Stack.cs" selected="True" />
+              <Node name="References" expanded="True" selected="True" />
             </Node>
             <Node name="TestsForStack" expanded="True" />
           </Node>
