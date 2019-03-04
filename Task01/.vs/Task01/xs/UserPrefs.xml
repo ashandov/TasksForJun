@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{D4C4A0AB-7A4F-4545-A3BE-F3BA890CFA42}|Default">
+  <MonoDevelop.Ide.ItemProperties.Task01 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Stack.cs">
+    <Files>
+      <File FileName="Queue.cs" Line="71" Column="13" />
+      <File FileName="Program.cs" Line="30" Column="1" />
+      <File FileName="Stack.cs" Line="13" Column="17" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Task01" expanded="True">
+            <Node name="Task01" expanded="True">
+              <Node name="Stack.cs" selected="True" />
+            </Node>
+            <Node name="TestsForStack" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>queueArray</Value>
+          <Value>start</Value>
+          <Value>end</Value>
+          <Value>queueArray.Length</Value>
+          <Value>arr1.Length - 1 / 2</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/anatolyshandov/Downloads/TasksForJun/TasksForJun/Task01/Queue.cs" relfile="Queue.cs" line="23" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
